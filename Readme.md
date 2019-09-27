@@ -44,4 +44,19 @@ http://ip-address/cbackup/index.php
 
 Скрипт первоначальной настройки cbackup для резервного копирования сетевого оборудования вендоров d-link (моделей DGS-1210-ME) и Mikrotik (любые модели)
 
-    ./update-db.sh
+    /scripts/update/update-db.sh
+___
+
+## Удалить
+
+Удалить контейнеры
+
+    /scripts/remove/rm-container.sh
+
+Удалить данные
+
+    /scripts/remove/rm-dir-container.sh
+
+Удалить образы
+
+    /scripts/remove/rm-images.sh
