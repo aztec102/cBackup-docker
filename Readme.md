@@ -35,9 +35,13 @@
 |:---------------------- |:----------:| ------------------:|
 | системный пользователь | cbackup    |  cbackup_password  |
 
+http://ip-address/cbackup/index.php
+
 <img src='./pictures/System-param-setup1.jpg' width='900'>
 <img src='./pictures/System-param-setup2.jpg' width='900'>
 
 Для дальнейшей настройки cBackup, воспользуйтесь [официальной инструкцией](https://cbackup.readthedocs.io/en/latest/getting-started/initial-setup/)
 
-[источник](https://github.com/ErshovSergey/cbackup-docker-compose)
+Скрипт первоначальной настройки cbackup для резервного копирования сетевого оборудования вендоров d-link (моделей DGS-1210-ME) и Mikrotik (любые модели)
+
+    ./update-db.sh
