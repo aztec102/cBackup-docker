@@ -37,12 +37,13 @@ RUN groupadd -r cbackup \
   && mkdir /opt/cbackup \
   && chown www-data:www-data /opt/cbackup \
   && systemctl enable cbackup \
-  && echo 'ServerName localhost' >> /etc/apache2/apache2.conf \
-  && sed -e "s/^bind-address\(.*\)=.*/bind-address=0.0.0.0/" -i /etc/mysql/mariadb.conf.d/50-server.cnf
+  && echo 'ServerName localhost' >> /etc/apache2/apache2.conf
 
-EXPOSE 22 80 3306 8437
+EXPOSE 22 80 8437
 
-ADD docker-entrypoint.sh /
+ADD cbackup/docker-entrypoint.sh /
+
+RUN chmod +x /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
