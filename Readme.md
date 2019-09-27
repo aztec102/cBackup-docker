@@ -1,12 +1,5 @@
 # Docker-контейнеры для системы резервного копирования сетевого оборудования [cBackup](https://cbackup.me/ru/)
 
-## Делаем исполняемыми файлы
-
-    cd ./cbackup-docker
-    chmod +x *.sh
-    cd ./step-by-step/
-    chmod +x *.sh
-
 ## Создаем образы
 
     ./00-build-images.sh
