@@ -35,6 +35,9 @@
 |:---------------------- |:----------:| ------------------:|
 | системный пользователь | cbackup    |  cbackup_password  |
 
+<img src='./pictures/System-param-setup1.jpg' width='900'>
+<img src='./pictures/System-param-setup2.jpg' width='900'>
+
 Для дальнейшей настройки cBackup, воспользуйтесь [официальной инструкцией](https://cbackup.readthedocs.io/en/latest/getting-started/initial-setup/)
 
 [источник](https://github.com/ErshovSergey/cbackup-docker-compose)
