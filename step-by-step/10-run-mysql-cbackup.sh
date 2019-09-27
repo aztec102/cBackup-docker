@@ -1,3 +1,4 @@
+#!/bin/bash
 docker run \
         --name mysql-cbackup \
         --detach \
