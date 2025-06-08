@@ -34,7 +34,7 @@ RUN apt-get -y install \
 
 RUN groupadd -r cbackup \
   && useradd -r -g cbackup -G www-data -d /opt/cbackup -s /bin/bash -c "cBackup System User" cbackup \
-  && wget -q -O /tmp/cbackup.deb "http://cbackup.me/latest?package=deb" \
+  && wget -q -O /tmp/cbackup.deb "https://github.com/cBackup/main/raw/master/releases/1.1.2/cbackup_1.1.2-1_all.deb" \
   && dpkg -i /tmp/cbackup.deb \
   && mv /opt/cbackup /opt/cbackup.orig \
   && mkdir /opt/cbackup \
