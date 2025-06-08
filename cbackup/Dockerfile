@@ -2,6 +2,9 @@ FROM debian:stretch
 
 RUN echo 'debconf debconf/frontend select teletype' | debconf-set-selections
 
+RUN sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list
+RUN sed -i 's|security.debian.org|archive.debian.org|g' /etc/apt/sources.list 
+RUN sed -i '/stretch-updates/d' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get dist-upgrade -y
 RUN apt-get install -y --no-install-recommends \
