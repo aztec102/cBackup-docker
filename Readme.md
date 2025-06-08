@@ -1,6 +1,5 @@
-# the repository is not supported. the project has moved to [serverhome](https://github.com/chatlamin/serverhome)
 
-## Docker-контейнеры для системы резервного копирования сетевого оборудования [cBackup](https://cbackup.me/ru/)
+## Docker-контейнеры для системы резервного копирования сетевого оборудования cBackup
 
 ## Создаем образы
 
